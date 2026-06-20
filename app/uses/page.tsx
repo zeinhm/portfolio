@@ -5,8 +5,9 @@ import { Squiggle } from "@/components/squiggle";
 import { Card, CardTitle, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Uses — Zein Hammad Marhabah",
+  title: "Uses",
   description: "The hardware, workspace and tools Zein uses day to day.",
+  alternates: { canonical: "/uses" },
 };
 
 function UsesRows({ card }: { card: UsesCard }) {

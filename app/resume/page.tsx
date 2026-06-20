@@ -5,9 +5,10 @@ import { Squiggle } from "@/components/squiggle";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
-  title: "Resume / CV — Zein Hammad Marhabah",
+  title: "Resume / CV",
   description:
     "The stack and work history of Zein Hammad Marhabah, a frontend engineer with 7 years of experience.",
+  alternates: { canonical: "/resume" },
 };
 
 export default function ResumePage() {

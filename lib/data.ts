@@ -6,6 +6,8 @@
 export const SITE = {
   name: "Zein Hammad Marhabah",
   wordmark: "ZM",
+  role: "Frontend Engineer",
+  url: "https://www.zeinhm.dev",
   github: "https://github.com/zeinhm",
   linkedin: "https://linkedin.com/in/zeinhm",
   zenith: "https://zenithbot.org",

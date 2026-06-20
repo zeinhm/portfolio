@@ -4,8 +4,9 @@ import { Squiggle } from "@/components/squiggle";
 import { EmailLink } from "@/components/email-link";
 
 export const metadata: Metadata = {
-  title: "Contact — Zein Hammad Marhabah",
+  title: "Contact",
   description: "Get in touch with Zein Hammad Marhabah.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

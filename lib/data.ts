@@ -38,6 +38,7 @@ export const SKILLS: { name: string; icon: string }[] = [
   { name: "Figma", icon: dv("figma/figma-original") },
   { name: "Remix", icon: dv("remix/remix-original") },
   { name: "Jira", icon: dv("jira/jira-original") },
+  { name: "Astro", icon: dv("jira/jira-original") },
 ];
 
 export type Job = {
@@ -75,7 +76,7 @@ export const WORK_HISTORY: Job[] = [
   {
     role: "Frontend Engineer",
     company: "SERA — Astra International",
-    meta: "Indonesia · Full-Time",
+    meta: "Indonesia · Contract",
     dates: "Nov 2023 – Jul 2025",
     bullets: [
       "Built TRAC to Go, a car-rental web product, from scratch in Next.js.",
@@ -95,7 +96,7 @@ export const WORK_HISTORY: Job[] = [
   {
     role: "Frontend Engineer",
     company: "CODEX — Telkom Indonesia",
-    meta: "Indonesia · Full-Time",
+    meta: "Indonesia · Contract",
     dates: "Jun 2020 – Apr 2021",
     bullets: [
       "Built POS dashboards (stock, cashier, staff), an internal CRM and a blog CMS.",
@@ -115,7 +116,7 @@ export const WORK_HISTORY: Job[] = [
   {
     role: "Web Developer",
     company: "Garena Indonesia",
-    meta: "Indonesia · Full-Time",
+    meta: "Indonesia · Internship",
     dates: "Aug 2019 – Nov 2019",
     bullets: [
       "Built in-game event webs (Free Fire, Arena of Valor, CoD Mobile).",

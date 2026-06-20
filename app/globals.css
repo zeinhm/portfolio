@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Map our semantic theme tokens to Tailwind color utilities.
+   Tokens themselves are CSS variables that flip with the active theme. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--bg-soft);
+  --color-line: var(--border);
+  --color-fg: var(--text);
+  --color-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-link: var(--link);
+
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo,
+    monospace;
+}
+
+/* Dark is the default (matches no-JS SSR + next-themes defaultTheme="dark"). */
+:root,
+.dark {
+  --bg: #0b1322;
+  --bg-soft: #131c2f;
+  --border: #1e2940;
+  --text: #e7eaf0;
+  --text-muted: #93a0b5;
+  --accent: #f5a524;
+  --link: #c7d0e0;
+}
+
+.light {
+  --bg: #f3f4f7;
+  --bg-soft: #ffffff;
+  --border: #e4e7ec;
+  --text: #141821;
+  --text-muted: #586071;
+  --accent: #d9881a;
+  --link: #3c4658;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* The whole UI is intentionally compact. */
+  font-size: 14px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(245, 165, 36, 0.28);
+}

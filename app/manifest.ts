@@ -4,10 +4,10 @@ import { SITE } from "@/lib/data";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${SITE.name} — ${SITE.role}`,
+    name: `${SITE.name} | ${SITE.role}`,
     short_name: SITE.wordmark,
     description:
-      "Personal portfolio of Zein Hammad Marhabah, a frontend engineer specializing in the React ecosystem.",
+      "Personal portfolio of Zein Hammad Marhabah, a software engineer specializing in the React ecosystem and AI-native full-stack delivery.",
     start_url: "/",
     display: "standalone",
     background_color: "#0B1322",

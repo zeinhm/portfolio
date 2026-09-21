@@ -13,17 +13,17 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
-const TITLE = `${SITE.name} — ${SITE.role}`;
+const TITLE = `${SITE.name} | ${SITE.role}`;
 const DESCRIPTION =
-  "Personal portfolio of Zein Hammad Marhabah, a frontend engineer based in Jakarta, Indonesia, specializing in the React ecosystem.";
+  "Personal portfolio of Zein Hammad Marhabah, a software engineer based in Jakarta, Indonesia, specializing in the React ecosystem and AI-native full-stack delivery.";
 
 export const metadata: Metadata = {
   // Base for resolving relative URLs (OG image, canonical, etc.).
   metadataBase: new URL(SITE.url),
   title: {
     default: TITLE,
-    // Sub-pages set just their name; the tab shows "Resume — Zein …".
-    template: `%s — ${SITE.name}`,
+    // Sub-pages set just their name; the tab shows "Resume | Zein …".
+    template: `%s | ${SITE.name}`,
   },
   description: DESCRIPTION,
   applicationName: SITE.name,
@@ -31,7 +31,10 @@ export const metadata: Metadata = {
   creator: SITE.name,
   keywords: [
     "Zein Hammad Marhabah",
-    "frontend engineer",
+    "software engineer",
+    "full-stack developer",
+    "AI-native",
+    "Claude Code",
     "React",
     "Next.js",
     "TypeScript",

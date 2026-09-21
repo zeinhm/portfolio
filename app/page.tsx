@@ -29,21 +29,29 @@ export default function HomePage() {
         </h1>
 
         <p className="mt-6 text-[clamp(.92rem,1.3vw,1.02rem)] leading-[1.7] text-muted">
-          A frontend engineer based in{" "}
+          A software engineer based in{" "}
           <span className="text-fg underline decoration-line underline-offset-4">
             Jakarta, Indonesia
           </span>
-          .<br />
-          I specialize in developing applications using the{" "}
+          , with 7+ years in the{" "}
           <span className="text-fg underline decoration-line underline-offset-4">
             React ecosystem
           </span>
           .<br />
-          Most recently, I was a Senior Web Engineer at{" "}
+          I build platform-level frontend systems and, increasingly,{" "}
           <span className="text-fg underline decoration-line underline-offset-4">
-            Ajaib Sekuritas
+            full-stack products
+          </span>{" "}
+          through an{" "}
+          <span className="text-fg underline decoration-line underline-offset-4">
+            AI-native workflow
           </span>
-          .
+          .<br />
+          Most recently I&apos;ve built AI messaging products at{" "}
+          <span className="text-fg underline decoration-line underline-offset-4">
+            Tamakun
+          </span>{" "}
+          and led frontend for a multi-tenant B2B SaaS platform.
         </p>
 
         <Squiggle className="mt-[30px]" />
@@ -67,7 +75,7 @@ export default function HomePage() {
 
         <h2 className="mb-[14px] mt-[60px] text-[1.2rem] font-semibold">Contact</h2>
         <p className="m-0 text-[1.05rem] text-muted">
-          You can reach me out anytime at <EmailLink />
+          You can reach me anytime at <EmailLink />
         </p>
       </div>
     </div>

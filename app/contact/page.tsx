@@ -22,7 +22,7 @@ export default function ContactPage() {
         <Squiggle className="mt-[22px]" />
 
         <p className="mt-[34px] text-[1.06rem] leading-[1.8] text-muted">
-          You can reach me out anytime at <EmailLink />
+          You can reach me anytime at <EmailLink />
           <br />
           I usually respond right away on business days.
         </p>

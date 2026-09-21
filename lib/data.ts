@@ -6,12 +6,12 @@
 export const SITE = {
   name: "Zein Hammad Marhabah",
   wordmark: "ZM",
-  role: "Frontend Engineer",
+  role: "Software Engineer",
   url: "https://www.zeinhm.dev",
   github: "https://github.com/zeinhm",
   linkedin: "https://linkedin.com/in/zeinhm",
   zenith: "https://zenithbot.org",
-  cv: "/assets/Frontend-Engineer-Zein-Hammad-Marhabah.pdf",
+  cv: "/assets/Zein-Hammad-Marhabah-CV.pdf",
 } as const;
 
 const dv = (p: string) =>
@@ -26,6 +26,7 @@ export const SKILLS: { name: string; icon: string }[] = [
   { name: "Tailwind CSS", icon: dv("tailwindcss/tailwindcss-original") },
   { name: "Sass", icon: dv("sass/sass-original") },
   { name: "Node.js", icon: dv("nodejs/nodejs-original") },
+  { name: "NestJS", icon: dv("nestjs/nestjs-original") },
   { name: "Express", icon: dv("express/express-original") },
   { name: "GraphQL", icon: dv("graphql/graphql-plain") },
   { name: "Firebase", icon: dv("firebase/firebase-plain") },
@@ -40,23 +41,33 @@ export const SKILLS: { name: string; icon: string }[] = [
   { name: "Figma", icon: dv("figma/figma-original") },
   { name: "Remix", icon: dv("remix/remix-original") },
   { name: "Jira", icon: dv("jira/jira-original") },
-  { name: "Astro", icon: dv("jira/jira-original") },
 ];
 
 export type Job = {
   role: string;
   company: string;
-  meta: string; // "Country · Type"
+  meta: string; // "City · Type"
   dates: string;
   bullets: string[];
 };
 
 export const WORK_HISTORY: Job[] = [
   {
+    role: "AI Fullstack Engineer (Part time)",
+    company: "Tamakun (Auto Mobility / Best Shield)",
+    meta: "Riyadh · Part-Time",
+    dates: "Aug 2026 - Present",
+    bullets: [
+      "Primary engineer on AutoConnect (~80% of commits), a multi-tenant omnichannel messaging hub unifying WhatsApp, Instagram, X, TikTok, SMS and email behind one API.",
+      "Built a connector framework, an AES-256-GCM credentials vault, an OAuth2 machine-token platform, and HMAC-signed webhooks over a transactional outbox.",
+      "Ran the pre-launch security audit and shipped the Arabic/RTL-first dashboard; built through an AI-native workflow (Claude Code over MCP).",
+    ],
+  },
+  {
     role: "Senior Web Engineer",
     company: "Ajaib Sekuritas",
-    meta: "Indonesia · Contract",
-    dates: "Mar 2026 – Jun 2026",
+    meta: "Jakarta · Contract",
+    dates: "Mar 2026 - Jun 2026",
     bullets: [
       "Delivered 5+ operator-facing features across Primary Bonds, US Stocks and Mutual Funds (SID generation, Alpaca money movement, MF processing).",
       "Built customer-facing US Stocks UI inside the mobile app webview.",
@@ -64,10 +75,30 @@ export const WORK_HISTORY: Job[] = [
     ],
   },
   {
-    role: "Squad Lead, Frontend",
+    role: "AI Fullstack Engineer",
+    company: "RedSquare Software MY",
+    meta: "Kuala Lumpur · Freelance",
+    dates: "Feb 2026 - Jul 2026",
+    bullets: [
+      "Rebuilt the trading performance report (frontend and backend) and public shareable reports for TraderCompass.",
+      "Improved KYC onboarding, compliance flows, and the landing page for ForteFi, a Malaysian fund-management platform.",
+    ],
+  },
+  {
+    role: "Fullstack Engineer",
+    company: "Cut and Go (Grand Mall Batam)",
+    meta: "Batam · Freelance",
+    dates: "Aug 2025 - Nov 2025, maintained since",
+    bullets: [
+      "Built an IoT self-service barbershop system end to end: monorepo, role-based dashboards, and kiosk order/payment.",
+      "Integrated Raspberry Pi station controllers so equipment power follows each paid order, with server-side fraud controls.",
+    ],
+  },
+  {
+    role: "Frontend Team Lead",
     company: "Hyperscal",
-    meta: "Indonesia · Contract",
-    dates: "Jul 2025 – Mar 2026",
+    meta: "Jakarta · Contract",
+    dates: "Jul 2025 - Mar 2026",
     bullets: [
       "Led front-end architecture for a multi-tenant B2B SaaS platform.",
       "Drove the Remix + React Router v7 (SSR) migration and flat-routes restructure.",
@@ -77,9 +108,9 @@ export const WORK_HISTORY: Job[] = [
   },
   {
     role: "Frontend Engineer",
-    company: "SERA — Astra International",
-    meta: "Indonesia · Contract",
-    dates: "Nov 2023 – Jul 2025",
+    company: "SERA - Astra International",
+    meta: "Jakarta · Contract",
+    dates: "Nov 2023 - Jul 2025",
     bullets: [
       "Built TRAC to Go, a car-rental web product, from scratch in Next.js.",
       "Delivered browsing, booking and payment flows from complex business rules.",
@@ -88,8 +119,8 @@ export const WORK_HISTORY: Job[] = [
   {
     role: "Frontend Engineer",
     company: "Tokenomy",
-    meta: "Indonesia · Full-Time",
-    dates: "Apr 2021 – Nov 2023",
+    meta: "Jakarta · Full-Time",
+    dates: "Apr 2021 - Nov 2023",
     bullets: [
       "Built investment, crypto-loan and exchange flows; TradingView + WebSocket markets.",
       "Built an in-house Storybook design system and improved Core Web Vitals.",
@@ -97,9 +128,9 @@ export const WORK_HISTORY: Job[] = [
   },
   {
     role: "Frontend Engineer",
-    company: "CODEX — Telkom Indonesia",
-    meta: "Indonesia · Contract",
-    dates: "Jun 2020 – Apr 2021",
+    company: "CODEX - Telkom Indonesia",
+    meta: "Jakarta · Contract",
+    dates: "Jun 2020 - Apr 2021",
     bullets: [
       "Built POS dashboards (stock, cashier, staff), an internal CRM and a blog CMS.",
       "Wrote unit tests and improved web performance.",
@@ -108,8 +139,8 @@ export const WORK_HISTORY: Job[] = [
   {
     role: "Frontend Engineer",
     company: "Sama Satu Jalan (Tebengan)",
-    meta: "Indonesia · Full-Time",
-    dates: "Nov 2019 – May 2020",
+    meta: "South Tangerang · Full-Time",
+    dates: "Nov 2019 - May 2020",
     bullets: [
       "Built the internal tools dashboard for a ride-sharing app.",
       "Integrated user/driver tracking history with Leaflet (GraphQL).",
@@ -118,8 +149,8 @@ export const WORK_HISTORY: Job[] = [
   {
     role: "Web Developer",
     company: "Garena Indonesia",
-    meta: "Indonesia · Internship",
-    dates: "Aug 2019 – Nov 2019",
+    meta: "Jakarta · Internship",
+    dates: "Aug 2019 - Nov 2019",
     bullets: [
       "Built in-game event webs (Free Fire, Arena of Valor, CoD Mobile).",
       "Built tournament/voting apps and per-game landing pages.",

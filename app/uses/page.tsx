@@ -15,7 +15,7 @@ function UsesRows({ card }: { card: UsesCard }) {
     <CardContent>
       {card.rows.map((row) => (
         <div key={row.label}>
-          <strong className="font-semibold text-fg">{row.label}</strong> —{" "}
+          <strong className="font-semibold text-fg">{row.label}</strong> -{" "}
           <span className="underline decoration-line underline-offset-[3px]">
             {row.value}
           </span>

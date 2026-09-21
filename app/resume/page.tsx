@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Resume / CV",
   description:
-    "The stack and work history of Zein Hammad Marhabah, a frontend engineer with 7 years of experience.",
+    "The stack and work history of Zein Hammad Marhabah, a software engineer with 7+ years of experience.",
   alternates: { canonical: "/resume" },
 };
 
@@ -19,9 +19,9 @@ export default function ResumePage() {
           My Resume / CV
         </h1>
         <p className="mt-[18px] max-w-[60ch] text-[1.02rem] leading-[1.65] text-muted">
-          I&apos;m a frontend engineer with 7 years of experience building web
-          applications. On this page you can learn about my stack and my
-          previous work experience.
+          I&apos;m a software engineer with 7+ years building web applications,
+          from platform-level frontend systems to full-stack products. On this
+          page you can learn about my stack and my previous work experience.
         </p>
         <Squiggle className="mt-6" />
 
@@ -29,7 +29,7 @@ export default function ResumePage() {
         <h2 className="mb-3 mt-[60px] text-[1.45rem] font-bold">Skills</h2>
         <p className="mb-[22px] max-w-[60ch] text-[.98rem] leading-[1.6] text-muted">
           The frameworks, libraries, services and runtimes I&apos;ve worked
-          with. Not a complete list — I&apos;m always picking up new things.
+          with. Not a complete list - I&apos;m always picking up new things.
         </p>
         <div className="flex flex-wrap gap-[10px]">
           {SKILLS.map((skill) => (

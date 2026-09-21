@@ -7,7 +7,7 @@ import { SITE } from "@/lib/data";
 // Rendered at build/request time and used as the link-share thumbnail
 // for Open Graph (Facebook, LinkedIn, Slack, iMessage, …).
 export const runtime = "nodejs";
-export const alt = `${SITE.name} — ${SITE.role}`;
+export const alt = `${SITE.name} | ${SITE.role}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -34,7 +34,6 @@ export default async function OgImage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "48px" }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={avatarSrc}
             alt=""
